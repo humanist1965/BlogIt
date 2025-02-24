@@ -2,6 +2,8 @@
 
 https://github.com/humanist1965/BlogIt
 
+git clone git@github.com:humanist1965/blogit.git
+
 git remote set-url origin git@github-humanist:humanist1965/BlogIt.git 
 
 In ~/.ssh/config

@@ -9,6 +9,33 @@ what i want to use
 to store timebased facts associated witg an entity
 
 
+# History of SQL
+
+The history of SQL and relational databases is a fascinating journey through the evolution of data management. It all began in the late 1960s and early 1970s when the need for structured, efficient ways to store and retrieve data became increasingly apparent.
+
+The foundation was laid by Edgar F. Codd, a British computer scientist working at IBM. In 1970, he published a groundbreaking paper titled "A Relational Model of Data for Large Shared Data Banks." Codd introduced the concept of the relational model, which proposed organizing data into tables (relations) with rows (tuples) and columns (attributes). This was a radical departure from the hierarchical and network database models of the time, which were more rigid and complex to navigate. Codd’s model emphasized simplicity, data independence, and the use of mathematical principles like set theory for querying data.
+
+Codd’s work didn’t just stop at theory—he outlined a set of rules (later known as Codd’s 12 Rules) to define what makes a database truly relational. He also envisioned a language to manipulate this data, which set the stage for SQL. However, IBM was initially slow to act on his ideas, partly because they were invested in their existing database system, IMS.
+
+Meanwhile, in the mid-1970s, a team at IBM’s San Jose Research Laboratory—Donald Chamberlin and Raymond Boyce—took up the challenge of creating a practical query language based on Codd’s relational model. They developed SEQUEL (Structured English Query Language), which was later renamed SQL (Structured Query Language) due to trademark issues. Their goal was to make data retrieval intuitive, using English-like syntax such as "SELECT" and "FROM." The first version of SQL was implemented in 1974 as part of IBM’s System R, one of the earliest relational database management systems (RDBMS). System R proved the relational model could work in practice, handling real-world data efficiently.
+
+Around the same time, others were catching on. In 1973, a group at UC Berkeley began working on INGRES, another early relational database system. Led by Michael Stonebraker, INGRES used its own query language, QUEL, but it still built on Codd’s ideas. INGRES was notable for being open-source and widely used in academia, which helped spread the relational database gospel.
+
+By the late 1970s and early 1980s, the commercial potential of relational databases became clear. In 1979, Relational Software, Inc. (later renamed Oracle Corporation) released Oracle, the first commercially available RDBMS, beating IBM to market. Oracle adopted SQL as its query language, capitalizing on its simplicity and power. IBM followed suit in 1981 with SQL/DS and later DB2 in 1983, fully embracing the relational model and SQL.
+
+SQL itself evolved over the years. In 1986, it became an official standard when the American National Standards Institute (ANSI) adopted it, followed by the International Organization for Standardization (ISO) in 1987. The first standard, SQL-86, defined core features like SELECT, INSERT, UPDATE, and DELETE. Subsequent revisions—like SQL-92, SQL:1999, and beyond—added advanced features such as triggers, stored procedures, and support for object-relational concepts.
+
+The 1980s and 1990s saw an explosion of RDBMS options: Microsoft SQL Server, PostgreSQL, MySQL, SQLite, and more. Each brought its own flavor to the table, but SQL remained the common thread, cementing its status as the lingua franca of databases. The relational model’s flexibility and SQL’s ease of use made them ideal for everything from business applications to scientific research.
+
+Today, SQL and relational databases underpin much of the digital world, from e-commerce platforms to data analytics. Even with the rise of NoSQL databases for handling unstructured data, the principles Codd introduced—and the language Chamberlin and Boyce crafted—remain enduringly relevant, adapting to new challenges while keeping data organized and accessible.
+
+
+
+
+
+
+
+
 
 # Datomic
 

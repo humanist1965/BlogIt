@@ -444,3 +444,132 @@ Here’s the full sequence in one Clojure snippet, assuming a Datomic setup:
 This is a minimal but functional start. You could extend it—add more attributes, relationships (like `:person/friend`), or query fancier patterns. Want to try tweaking this, like adding a new attribute or querying something specific? Let me know!
 
 
+
+
+
+# Deno KV Datastore
+
+Let’s dive into a beginner-friendly tutorial on using the Deno KV datastore! Deno KV is a built-in, lightweight key-value database that comes with the Deno runtime. It’s simple to use, requires no external setup, and is perfect for storing and retrieving data in your Deno applications. This tutorial will walk you through the basics—setting it up, performing CRUD operations (Create, Read, Update, Delete), and exploring some handy features like atomic transactions. By the end, you’ll have a solid foundation to start using Deno KV in your projects!
+
+### Step 1: Setting Up Deno KV
+First things first, you need Deno installed. If you haven’t already, grab it from [deno.com](https://deno.com) and install it. Once that’s done, Deno KV is ready to use out of the box—no extra dependencies or configuration needed.
+
+To start, create a new file called `kv-tutorial.ts`. Open it in your favorite editor, and let’s connect to the Deno KV store. Add this line:
+
+```typescript
+const kv = await Deno.openKv();
+```
+
+This opens a connection to the default KV database. Locally, Deno uses SQLite under the hood to store your data persistently on disk. If you deploy this to Deno Deploy later, it’ll switch to a globally distributed FoundationDB backend—same API, different engine. For now, we’re keeping it local and simple.
+
+### Step 2: Basic CRUD Operations
+Let’s go through the core operations you’ll use with Deno KV: creating, reading, updating, and deleting data.
+
+#### Create (Set)
+Deno KV stores data as key-value pairs. Keys are arrays of JavaScript primitives (like strings or numbers), and values can be almost any JavaScript type that’s serializable (objects, arrays, strings, etc.). Let’s store some user data:
+
+```typescript
+await kv.set(["users", "alice"], { name: "Alice", age: 30 });
+await kv.set(["users", "bob"], { name: "Bob", age: 25 });
+```
+
+Here, `["users", "alice"]` is the key—a two-part array where `"users"` acts like a category or prefix, and `"alice"` is a unique identifier. The value is an object with some user info. The `set` method saves this to the database.
+
+#### Read (Get)
+To retrieve data, use the `get` method with the same key:
+
+```typescript
+const alice = await kv.get(["users", "alice"]);
+console.log(alice.value); // { name: "Alice", age: 30 }
+```
+
+The result is an object with `key`, `value`, and `versionstamp` properties. The `value` is what we stored, and the `versionstamp` tracks the version of this entry (useful for transactions, which we’ll cover later).
+
+#### Update (Set Again)
+Updating is as simple as calling `set` with the same key but a new value:
+
+```typescript
+await kv.set(["users", "alice"], { name: "Alice", age: 31 });
+const updatedAlice = await kv.get(["users", "alice"]);
+console.log(updatedAlice.value); // { name: "Alice", age: 31 }
+```
+
+Since `set` overwrites the existing value, this updates Alice’s age.
+
+#### Delete
+To remove an entry, use the `delete` method:
+
+```typescript
+await kv.delete(["users", "bob"]);
+const bob = await kv.get(["users", "bob"]);
+console.log(bob.value); // null
+```
+
+If the key doesn’t exist or has been deleted, `get` returns `null` for the value.
+
+### Step 3: Listing Data
+What if you want to fetch multiple entries at once? Deno KV’s `list` method lets you query by key prefix. Let’s list all users:
+
+```typescript
+const users = kv.list({ prefix: ["users"] });
+for await (const entry of users) {
+  console.log(`${entry.key[1]}: ${entry.value.name}, ${entry.value.age}`);
+}
+```
+
+This outputs something like:
+```
+alice: Alice, 31
+```
+
+The `prefix: ["users"]` option matches all keys starting with `["users"]`. The result is an async iterator, so we use a `for await...of` loop to process each entry. Keys are returned in lexicographical order, so `"alice"` comes before `"bob"`.
+
+### Step 4: Atomic Transactions
+Deno KV supports ACID transactions, which ensure your operations are consistent even when modifying multiple keys. Let’s simulate a bank transfer between two accounts:
+
+```typescript
+// Initialize balances
+await kv.set(["balances", "alice"], 100);
+await kv.set(["balances", "bob"], 50);
+
+// Transfer 20 from Alice to Bob
+const transferAmount = 20;
+const aliceBalance = await kv.get(["balances", "alice"]);
+const bobBalance = await kv.get(["balances", "bob"]);
+
+if (aliceBalance.value < transferAmount) {
+  console.log("Insufficient funds!");
+} else {
+  const success = await kv.atomic()
+    .set(["balances", "alice"], aliceBalance.value - transferAmount)
+    .set(["balances", "bob"], bobBalance.value + transferAmount)
+    .commit();
+
+  if (success) {
+    console.log("Transfer successful!");
+    console.log("Alice:", (await kv.get(["balances", "alice"])).value); // 80
+    console.log("Bob:", (await kv.get(["balances", "bob"])).value); // 70
+  } else {
+    console.log("Transfer failed!");
+  }
+}
+```
+
+The `atomic()` method groups operations together. If any part fails (e.g., due to a concurrent modification), the whole transaction rolls back. You can also add `.check()` to ensure keys haven’t changed since you last read them, but this example keeps it straightforward.
+
+### Step 5: Running the Code
+Save your `kv-tutorial.ts` file. To run it, use this command in your terminal:
+
+```bash
+deno run --unstable-kv kv-tutorial.ts
+```
+
+The `--unstable-kv` flag is needed because Deno KV is still an unstable feature as of early 2025. Your data will be stored locally in a default SQLite file (check `deno info` to see where).
+
+### Bonus: Tips and Next Steps
+- **Keys as Arrays**: Using arrays for keys (e.g., `["users", "alice"]`) lets you organize data hierarchically, like a REST API path.
+- **In-Memory Testing**: For testing, use `Deno.openKv(":memory:")` to create a temporary, non-persistent store.
+- **Deploying**: If you push this to Deno Deploy, KV becomes globally distributed with zero config—perfect for scalable apps.
+- **Learn More**: Check the [Deno KV docs](https://docs.deno.com/runtime/manual/advanced/kv) for advanced features like watchers or consistency options.
+
+And that’s it! You’ve now got the basics of Deno KV down—storing data, fetching it, updating it, and even handling transactions. Play around with it, maybe build a small app like a to-do list or a counter, and see how it fits into your projects. What do you think you’ll build with it?

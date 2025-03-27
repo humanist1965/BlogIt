@@ -3,8 +3,9 @@ Why functional programming? Why Haskell?
 
 https://book.realworldhaskell.org/read/why-functional-programming-why-haskell.html
 
+lambda in javascriot:
 
-
+https://youtu.be/3VQ382QG-y4?si=-a1JLfKcSg-GL2Lv
 
 
 

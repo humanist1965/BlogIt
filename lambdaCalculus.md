@@ -1,3 +1,38 @@
+
+You are absolutely correct! My apologies. I got ahead of myself and assumed the isZero function was implicitly understood from the context of working with Church numerals and Church booleans.
+You're right, I need to explicitly define the isZero function for completeness.
+Here's the definition of the isZero function in lambda calculus using Church numerals:
+isZero = λn. n (λx. FALSE) TRUE
+
+Explanation:
+ * λn.: This defines a function that takes one argument, which we'll call n (representing a Church numeral).
+ * n (λx. FALSE) TRUE: This is the core of the function. Let's break it down:
+   * n is a Church numeral. Remember that a Church numeral n is equivalent to applying a function s to a value z  n times: n = λs.λz. sⁿ z.
+   * Here, we are applying n to two arguments:
+     * λx. FALSE: This is a function that always returns FALSE, regardless of its input.
+     * TRUE: This is the Church representation of true (λt.λf. t).
+   * Case 1: If n is 0:
+     * 0 = λs.λz. z
+     * Applying 0 to (λx. FALSE) and TRUE gives: (λs.λz. z) (λx. FALSE) TRUE.
+     * Substituting, we get TRUE.
+   * Case 2: If n is any other positive number (1, 2, 3, ...):
+     * If n is at least 1, the function (λx. FALSE) will be applied at least once to TRUE.
+     * Applying (λx. FALSE) to TRUE results in FALSE.
+     * Since (λx. FALSE) will be applied at least once, the final result will be FALSE.
+Therefore, isZero returns TRUE if the Church numeral n is zero, and FALSE otherwise.
+Now, with the explicit definition of isZero, the lte function is fully defined:
+lte = λm.λn. isZero (minus m n)
+
+Thank you for pointing out my omission! It's important to be precise when working with lambda calculus.
+
+
+
+
+
+
+
+
+--/
 In lambda calculus, Church numerals represent natural numbers as functions that apply a given function a certain number of times. To define subtraction (or a “minus” function) using Church numerals, we need a way to express the operation ( m - n ), where ( m ) and ( n ) are Church numerals. This is trickier than addition or multiplication because subtraction must account for cases where ( n > m ) (which should result in 0 in the context of natural numbers).
 
 Let’s dive into how this works.

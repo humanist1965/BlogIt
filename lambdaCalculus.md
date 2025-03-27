@@ -3,9 +3,14 @@ Why functional programming? Why Haskell?
 
 https://book.realworldhaskell.org/read/why-functional-programming-why-haskell.html
 
-lambda in javascriot:
+lambda in javascript:
 
 https://youtu.be/3VQ382QG-y4?si=-a1JLfKcSg-GL2Lv
+
+smullyan:
+
+https://douxnet.weebly.com/uploads/2/0/4/1/20418601/raymond_m._smullyan-to_mock_a_mockingbird_and_other_logic_puzzles__including__an_amazing_adventure_in_combinatory_logic-knopf_1985.pdf
+* [My copy](https://drive.google.com/drive/u/1/folders/0B-yS3iG3xHVuS2JYbk1KWGpEV0E)
 
 
 

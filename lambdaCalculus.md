@@ -1,4 +1,17 @@
 
+Why functional programming? Why Haskell?
+
+https://book.realworldhaskell.org/read/why-functional-programming-why-haskell.html
+
+
+
+
+
+
+
+
+
+
 Yes, the idea of creating a teaching language based on lambda calculus, often with the goal of illustrating functional programming concepts and the foundations of language design, is not unique. Several projects and academic efforts have explored this territory. Here are some examples and related concepts:
 1. Academic Projects and Research:
  * Lambda Calculators and Interpreters: Many universities and researchers have developed simple interpreters for lambda calculus as teaching tools. These often focus on demonstrating beta reduction and the basic mechanics.

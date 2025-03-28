@@ -1,3 +1,39 @@
+## TinyT - First details
+
+My TinyT Language is going to be as close to lambda calculus as possible BUT will support a number of primitive functions and data types (standard JSON).
+
+TinyT will be a very small subset of typescript. Initially just JavaScript but I will later add typing support.
+
+Do you think it will be relatively easy to compile TinyT programs into other more efficient languages (go, rust) for example 
+
+
+
+That's an interesting direction for your TinyT language! Aiming for a lambda calculus core with added practicalities like primitive functions and JSON support offers a good balance between theoretical elegance and real-world utility.
+Regarding the ease of compiling TinyT programs into more efficient languages like Go or Rust, the answer is it depends heavily on the specific features and design of your TinyT language.
+Here's a breakdown of factors that will influence the ease of compilation:
+Factors that could make compilation relatively easier:
+ * Clear and Well-Defined Semantics: If your TinyT language has a very clearly defined and unambiguous semantics, especially around its core lambda calculus features and how the primitive functions interact, it will be easier to map those semantics to the constructs of Go or Rust.
+ * Static Typing (if you add it): If you eventually add static typing to TinyT, this can significantly simplify the compilation process to statically typed languages like Go and Rust. The type information can be used to generate more efficient code and catch errors at compile time.
+ * Limited Feature Set: Starting with a very small subset of JavaScript will make the initial compilation target simpler. If you keep the feature set relatively constrained, the mapping to Go or Rust will be more direct.
+ * Focus on Functional Aspects: Since you're aiming for a lambda calculus core, if your TinyT programs lean heavily on functional programming paradigms (immutability, pure functions), it might be easier to translate them to Go or Rust, which both have good support for functional programming concepts (though Rust's is stronger in this area).
+ * Explicit Control Flow: If TinyT's control flow mechanisms are relatively explicit and map well to Go or Rust's control flow (e.g., simple conditionals, loops), the translation will be smoother.
+Factors that could make compilation more challenging:
+ * Dynamic Typing (initially): Starting with just JavaScript's dynamic typing will introduce challenges when compiling to statically typed languages like Go and Rust. You'll need to figure out how to handle types at runtime or potentially introduce type inference at the compilation stage, which can be complex.
+ * JavaScript Quirks and Implicit Behavior: JavaScript has various quirks and implicit behaviors (e.g., type coercion, this binding) that can be difficult to replicate accurately and efficiently in Go or Rust. You'll need to decide which of these quirks to support and how to translate them.
+ * Garbage Collection (JavaScript): JavaScript relies on garbage collection. Go also has garbage collection, so this might be less of an issue. However, Rust uses a borrow checker for memory management, which is a very different paradigm. Compiling garbage-collected TinyT to Rust's borrow checker would be a significant challenge. You'd likely need to explore approaches like reference counting or using Rc and Arc carefully.
+ * Dynamic Scoping (if present): If TinyT inherits JavaScript's dynamic scoping (which is less common in modern JavaScript but exists), it can be harder to translate to languages with lexical scoping like Go and Rust.
+ * Complex Object Model: JavaScript's object model and prototype inheritance can be complex to map directly to Go's structs and methods or Rust's structs and traits.
+ * Asynchronous Operations: If TinyT supports asynchronous operations (like Promises in JavaScript), you'll need to find efficient ways to translate them to Go's goroutines and channels or Rust's async/await.
+Overall Assessment:
+Initially, compiling a very small, lambda calculus-focused subset of JavaScript (your initial TinyT) to Go might be moderately challenging due to the dynamic typing and potential JavaScript quirks. Compiling to Rust would likely be significantly more challenging due to the memory management differences.
+However, if you prioritize a clean, well-defined semantics for TinyT, especially as you add typing support, the compilation process could become more manageable.
+Recommendations:
+ * Start Simple: Focus on a very minimal core of TinyT initially, perhaps just the pure lambda calculus with a few basic primitive functions and JSON support. This will make the initial compilation target less daunting.
+ * Define Semantics Rigorously: Clearly define the semantics of every feature in TinyT. This will be crucial for a successful compilation process.
+ * Consider Intermediate Representations (IR): Using an intermediate representation (IR) can make the compilation process more modular. You can first compile TinyT to the IR and then have separate backends to compile the IR to Go and Rust.
+ * Gradual Feature Addition: Add more complex JavaScript features to TinyT gradually, carefully considering the implications for compilation.
+ * Experiment and Prototype: Don't be afraid to experiment with different compilation strategies and prototype small parts of the compiler to assess the feasibility.
+In conclusion, while not trivial, compiling TinyT to languages like Go and Rust is definitely possible, especially if you design TinyT with compilation in mind. The key will be to have a clear understanding of TinyT's semantics and to carefully address the differences in type systems, memory management, and other language features between TinyT and your target languages. Good luck with your TinyT project! It sounds like a fascinating endeavor.
 
 
 ## idea for a course/Project using TinyT

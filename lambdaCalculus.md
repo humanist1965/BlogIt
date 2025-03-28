@@ -1,3 +1,13 @@
+<br>
+
+
+# Lambda Calculus - Public Notes
+
+
+
+
+## Library - References
+
 
 Why functional programming? Why Haskell?
 
@@ -12,7 +22,11 @@ smullyan:
 https://douxnet.weebly.com/uploads/2/0/4/1/20418601/raymond_m._smullyan-to_mock_a_mockingbird_and_other_logic_puzzles__including__an_amazing_adventure_in_combinatory_logic-knopf_1985.pdf
 * [My copy](https://drive.google.com/drive/u/1/folders/0B-yS3iG3xHVuS2JYbk1KWGpEV0E)
 
+ 
 
+
+
+ 
 
 
 
@@ -286,3 +300,11 @@ The subtraction function in lambda calculus using Church numerals is:
 
 This expression is complex but works by leveraging the predecessor function iteratively. For practical use, you’d typically simplify or test it in a lambda calculus interpreter, but this is the pure, untyped lambda calculus solution.
 
+
+<span class="top-right">
+<a class="abtn btn" href="http://localhost:3000/code/BLOGIT/lambdaCalculus.md">EDIT</a>
+<a class="abtn btn" href="http://localhost:3000/view/BLOGIT/lambdaCalculus.md">VIEW</a>
+<a class="abtn btn" href="http://localhost:3000/code/MIG1/help/UsingTheWiki.md">?</a>
+</span>
+<link rel="stylesheet" href="./styles.css">
+<div class="breadcrumb-menu"><a href="..//README.md"></a> &gt; </div>

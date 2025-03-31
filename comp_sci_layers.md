@@ -10,7 +10,7 @@
 6.  **Operating System**
     * **Containers**
 7.  **IBM PC Architecture**
-   * **Virtual Machines**
+    * **Virtual Machines**
 9.  **Von Neumann Architecture**
 10.  **CPU and Logic Gates**
 11. **Boolean Logic Circuits**

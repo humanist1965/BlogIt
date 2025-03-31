@@ -10,12 +10,13 @@
 6.  **Operating System**
     * **Containers**
 7.  **IBM PC Architecture**
-8.  **Von Neumann Architecture**
-9.  **CPU and Logic Gates**
-10. **Boolean Logic Circuits**
-11. **Semiconductor Chips**
-12. **Value Technology**
-13. **Computer Science Theory**
+   * **Virtual Machines**
+9.  **Von Neumann Architecture**
+10.  **CPU and Logic Gates**
+11. **Boolean Logic Circuits**
+12. **Semiconductor Chips**
+13. **Value Technology**
+14. **Computer Science Theory**
     * **Lambda Calculus**
     * **Turing Machines**
     * **Algorithm Complexity**

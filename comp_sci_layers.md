@@ -22,8 +22,6 @@
     * **Algorithm Complexity**
 
 
-Understood. Here are the separate sections, each with its overview:
-
 **Computer Science - Layers**
 
 ---

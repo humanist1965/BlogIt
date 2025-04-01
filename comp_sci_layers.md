@@ -1,7 +1,7 @@
 # **Computer Science - Layers**
 
-1.  **Computer Program (Solution)**
-2.  **Solution-Level Abstractions**
+1.  **[Computer Program (Solution)](layers/computer_program_solution.md)**
+2.  **[Solution-Level Abstractions](layers/solution_level_abstractions.md)**
 3.  **Application Framework (Building Blocks)**
 4.  **Design Patterns**
 5.  **Programming Language**
@@ -22,19 +22,6 @@
     * **Algorithm Complexity**
 
 
-**Computer Science - Layers**
-
----
-
-**1. Computer Program (Solution)**
-
-* **Overview:** The highest level of abstraction. Represents the final, executable software designed to solve a specific problem or provide a service. This is the user-facing layer, where all underlying abstractions come together.
-
----
-
-**2. Solution-Level Abstractions**
-
-* **Overview:** These are high-level conceptual models and architectural decisions made within the context of a specific software project. They include things like domain-specific languages, architectural styles tailored to the application, and overarching design philosophies.
 
 ---
 

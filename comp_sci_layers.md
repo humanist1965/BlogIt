@@ -1,3 +1,5 @@
+<br>
+
 # **Computer Science - Layers**
 
 1.  **[Computer Program (Solution)](layers/computer_program_solution.md)**
@@ -21,3 +23,11 @@
     * **[Turing Machines](layers/turing_machines.md)**
     * **[Algorithm Complexity](layers/algorithm_complexity.md)**
     * **[Algorithms](layers/algorithms.md)**
+
+<span class="top-right">
+<a class="abtn btn" href="http://localhost:3000/code/BLOGIT/comp_sci_layers.md">EDIT</a>
+<a class="abtn btn" href="http://localhost:3000/view/BLOGIT/comp_sci_layers.md">VIEW</a>
+<a class="abtn btn" href="http://localhost:3000/code/MIG1/help/UsingTheWiki.md">?</a>
+</span>
+<link rel="stylesheet" href="./styles.css">
+<div class="breadcrumb-menu"><a href="..//README.md"></a> &gt; </div>

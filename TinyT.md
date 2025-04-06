@@ -1,3 +1,5 @@
+# TinyT - LambdaCalculus subset of Typescript
+
 In the lead-up to retirement (and as a welcome stress reliever), I'm embarking on a personal project to codify my understanding of computer programming. 
 My focus will be on functional programming, a paradigm I find particularly compelling. 
 This project is deeply inspired by the classic textbook "Structure and Interpretation of Computer Programs" (SICP), 

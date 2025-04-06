@@ -1,7 +1,8 @@
 In the lead-up to retirement (and as a welcome stress reliever), I'm embarking on a personal project to codify my understanding of computer programming. 
 My focus will be on functional programming, a paradigm I find particularly compelling. 
 This project is deeply inspired by the classic textbook "Structure and Interpretation of Computer Programs" (SICP), 
-which served as the core text for MIT's introductory computer science course, **6.001**, for over two decades. 
+which served as the core text for [MIT's introductory computer science course, **6.001**](https://youtu.be/-J_xL4IGhJA?si=44la17hvzMYqE2Fn), 
+for over two decades. 
 I'm particularly interested in the recent JavaScript-based rewrite of SICP, having been familiar with the original Scheme version.
 
 To further explore these concepts, I intend to create **TinyT**, a minimalist programming language based on a functional approach. 

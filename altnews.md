@@ -1,3 +1,5 @@
+<br>
+
 # Alt News
 
 If you're looking for more modern, alternative UK news websites that diverge from the mainstream options I listed earlier, here are some contemporary platforms known for fresh perspectives, innovative approaches, or niche focuses as of April 6, 2025. These tend to prioritize digital-first strategies, unique angles, or community-driven content:
@@ -23,3 +25,11 @@ If you're looking for more modern, alternative UK news websites that diverge fro
 * **Unherd** ([unherd.com](https://unherd.com)) - A platform for contrarian and intellectual takes on UK news, often challenging progressive or populist trends. Its sleek design and essay-style content feel distinctly modern.
 
 These alternatives often lean into digital innovation—think podcasts, newsletters, or data-driven reporting—and cater to audiences seeking perspectives outside the BBC-to-Daily-Mail spectrum. Some are more opinionated or niche, so they might not suit everyone, but they’re shaping the modern UK media landscape. If you want me to dig deeper into any of these or find even more offbeat options, just say the word!
+
+<span class="top-right">
+<a class="abtn btn" href="http://localhost:3000/code/BLOGIT/altnews.md">EDIT</a>
+<a class="abtn btn" href="http://localhost:3000/view/BLOGIT/altnews.md">VIEW</a>
+<a class="abtn btn" href="http://localhost:3000/code/MIG1/help/UsingTheWiki.md">?</a>
+</span>
+<link rel="stylesheet" href="./styles.css">
+<div class="breadcrumb-menu"><a href="..//README.md"></a> &gt; </div>

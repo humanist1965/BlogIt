@@ -1,3 +1,5 @@
+<br>
+
 # TinyT - LambdaCalculus subset of Typescript
 
 In the lead-up to retirement (and as a welcome stress reliever), I'm embarking on a personal project to codify my understanding of computer programming. 
@@ -13,3 +15,11 @@ My initial experiments and notes on Lambda Calculus are available in this notebo
 [https://github.com/humanist1965/deno/blob/main/jupyter/LambdaCalculus/lambda_calc.ipynb](https://github.com/humanist1965/deno/blob/main/jupyter/LambdaCalculus/lambda_calc.ipynb). 
 This project will serve as a practical and deeply engaging way to solidify my knowledge and explore the elegance of functional programming.
 
+
+<span class="top-right">
+<a class="abtn btn" href="http://localhost:3000/code/BLOGIT/TinyT.md">EDIT</a>
+<a class="abtn btn" href="http://localhost:3000/view/BLOGIT/TinyT.md">VIEW</a>
+<a class="abtn btn" href="http://localhost:3000/code/MIG1/help/UsingTheWiki.md">?</a>
+</span>
+<link rel="stylesheet" href="./styles.css">
+<div class="breadcrumb-menu"><a href="..//README.md"></a> &gt; </div>

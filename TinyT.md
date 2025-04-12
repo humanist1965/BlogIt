@@ -31,6 +31,8 @@ This project will serve as a practical and deeply engaging way to solidify my kn
 
 * Watch the leactures: [youtube](https://www.youtube.com/watch?v=2Op3QLzMgSY)
 
+* GeminiNotebook: [here](https://notebooklm.google.com/notebook/3a566adf-59c2-4599-816d-9a63db1e9990?_gl=1*557lu9*_up*MQ..*_ga*ODc1OTM4MDU0LjE3NDQ0NTA2ODY.*_ga_W0LDH41ZCB*MTc0NDQ1MDY4Ni4xLjAuMTc0NDQ1MDY4Ni4wLjAuMA..&original_referer=https:%2F%2Fnotebooklm.google%23&pli=1)
+
 <span class="top-right">
 <a class="abtn btn" href="http://localhost:3000/code/BLOGIT/TinyT.md">EDIT</a>
 <a class="abtn btn" href="http://localhost:3000/view/BLOGIT/TinyT.md">VIEW</a>

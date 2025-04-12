@@ -39,6 +39,56 @@ This project will serve as a practical and deeply engaging way to solidify my kn
 * GeminiNotebook: [here](https://notebooklm.google.com/notebook/3a566adf-59c2-4599-816d-9a63db1e9990?_gl=1*557lu9*_up*MQ..*_ga*ODc1OTM4MDU0LjE3NDQ0NTA2ODY.*_ga_W0LDH41ZCB*MTc0NDQ1MDY4Ni4xLjAuMTc0NDQ1MDY4Ni4wLjAuMA..&original_referer=https:%2F%2Fnotebooklm.google%23&pli=1)
     * [\<podcast>](https://drive.google.com/file/d/1G9Uvy5dLySz737SfZbjMhF6W0DfoZPBF/view?usp=sharing) - summary
 
+
+
+<div class="page-spacer"></div>
+
+## People influenced by SICP
+
+The *Structure and Interpretation of Computer Programs* (SICP) course from MIT (6.001) is one of the most iconic introductory computer science courses ever created. It was originally taught using the Scheme programming language and emphasized a deep understanding of programming principles and computational thinking.
+
+While the course itself was taught to countless students at MIT, **a number of now-famous figures in tech and academia either took SICP or were influenced by it**. Here are some notable people associated with the course — either as students, teachers, or those who acknowledged its impact:
+
+---
+
+### 🚀 **Famous people who took or were heavily influenced by SICP**
+
+#### 1. **Paul Graham**
+- Co-founder of Y Combinator.
+- Studied at Harvard and MIT.
+- An advocate for Lisp (closely related to Scheme).
+- He has praised SICP and the ideas behind it in his essays, especially *"Beating the Averages."*
+
+#### 2. **Guy Steele**
+- Co-creator of the Scheme language (which SICP uses).
+- Though not a student of the course per se, his work underpins much of it.
+- Also involved in creating Java and the Common Lisp standard.
+
+#### 3. **Hal Abelson & Gerald Jay Sussman**
+- The *creators* of the SICP course and textbook.
+- Not students but legendary professors at MIT whose teaching shaped generations of programmers.
+
+#### 4. **Bret Victor**
+- While there's no direct evidence he took the course at MIT, he's cited SICP as a major influence in talks and writings about programming, interactivity, and design.
+
+#### 5. **Peter Norvig**
+- Director of Research at Google.
+- He has praised SICP and similar deep-learning curricula as foundational to good CS education.
+
+---
+
+### 🧠 Why it's so influential:
+Even for those who didn't take the course at MIT, **SICP is a rite of passage** in many elite CS programs. Its principles influenced:
+- Functional programming evangelists
+- Compiler designers
+- AI researchers
+- Early Lisp programmers
+- Software architecture thinkers
+
+---
+
+Want to see a list of schools or companies that still use SICP or its ideas today? Or are you curious if someone specific you admire took it?
+
 <span class="top-right">
 <a class="abtn btn" href="http://localhost:3000/code/BLOGIT/TinyT.md">EDIT</a>
 <a class="abtn btn" href="http://localhost:3000/view/BLOGIT/TinyT.md">VIEW</a>

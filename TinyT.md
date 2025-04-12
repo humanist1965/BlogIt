@@ -2,6 +2,14 @@
 
 # TinyT - LambdaCalculus subset of Typescript
 
+* [Introduction](#introduction)
+
+* [Structure and Interpretation of Computer Programs (SICP)](#sicp)
+
+<div class="page-spacer"></div>
+
+## Introduction
+
 In the lead-up to retirement (and as a welcome stress reliever), I'm embarking on a personal project to codify my understanding of computer programming. 
 My focus will be on functional programming, a paradigm I find particularly compelling. 
 This project is deeply inspired by the classic textbook "Structure and Interpretation of Computer Programs" (SICP), 
@@ -15,6 +23,13 @@ My initial experiments and notes on Lambda Calculus are available in this notebo
 [https://github.com/humanist1965/deno/blob/main/jupyter/LambdaCalculus/lambda_calc.ipynb](https://github.com/humanist1965/deno/blob/main/jupyter/LambdaCalculus/lambda_calc.ipynb). 
 This project will serve as a practical and deeply engaging way to solidify my knowledge and explore the elegance of functional programming.
 
+
+
+# Structure and Interpretation of Computer Programs (SICP)
+
+* Read the book: [here](https://github.com/sarabander/sicp-pdf)
+
+* Watch the leactures: [youtube](https://www.youtube.com/watch?v=2Op3QLzMgSY)
 
 <span class="top-right">
 <a class="abtn btn" href="http://localhost:3000/code/BLOGIT/TinyT.md">EDIT</a>

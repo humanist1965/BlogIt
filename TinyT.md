@@ -2,12 +2,15 @@
 
 # TinyT - LambdaCalculus subset of Typescript
 
+## Contents
+
 * [Introduction](#introduction)
 
 * [Structure and Interpretation of Computer Programs (SICP)](#sicp)
 
 <div class="page-spacer"></div>
 
+[contents](#contents)
 ## Introduction
 
 In the lead-up to retirement (and as a welcome stress reliever), I'm embarking on a personal project to codify my understanding of computer programming. 
@@ -24,7 +27,9 @@ My initial experiments and notes on Lambda Calculus are available in this notebo
 This project will serve as a practical and deeply engaging way to solidify my knowledge and explore the elegance of functional programming.
 
 
+<div class="page-spacer"></div>
 
+[contents](#contents)
 # Structure and Interpretation of Computer Programs (SICP)
 
 * Read the book: [here](https://github.com/sarabander/sicp-pdf)
@@ -32,6 +37,7 @@ This project will serve as a practical and deeply engaging way to solidify my kn
 * Watch the leactures: [youtube](https://www.youtube.com/watch?v=2Op3QLzMgSY)
 
 * GeminiNotebook: [here](https://notebooklm.google.com/notebook/3a566adf-59c2-4599-816d-9a63db1e9990?_gl=1*557lu9*_up*MQ..*_ga*ODc1OTM4MDU0LjE3NDQ0NTA2ODY.*_ga_W0LDH41ZCB*MTc0NDQ1MDY4Ni4xLjAuMTc0NDQ1MDY4Ni4wLjAuMA..&original_referer=https:%2F%2Fnotebooklm.google%23&pli=1)
+    * [\<podcast>](https://drive.google.com/file/d/1G9Uvy5dLySz737SfZbjMhF6W0DfoZPBF/view?usp=sharing) - summary
 
 <span class="top-right">
 <a class="abtn btn" href="http://localhost:3000/code/BLOGIT/TinyT.md">EDIT</a>

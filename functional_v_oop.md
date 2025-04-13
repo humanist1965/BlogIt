@@ -1,3 +1,5 @@
+<br>
+
 # Functional v OOP
 
 like USA v China
@@ -77,3 +79,11 @@ we have modules/library/namspace mechanisms in all modern
 programming languages. these allow you to tie and group
 functions that relate to a datatyoe together.
 
+
+<span class="top-right">
+<a class="abtn btn" href="http://localhost:3000/code/BLOGIT/functional_v_oop.md">EDIT</a>
+<a class="abtn btn" href="http://localhost:3000/view/BLOGIT/functional_v_oop.md">VIEW</a>
+<a class="abtn btn" href="http://localhost:3000/code/MIG1/help/UsingTheWiki.md">?</a>
+</span>
+<link rel="stylesheet" href="./styles.css">
+<div class="breadcrumb-menu"><a href="..//README.md"></a> &gt; </div>

@@ -1,3 +1,5 @@
+<br>
+
 
 
 # Functional Programming vs. OOP: A Battle of Paradigms
@@ -53,3 +55,11 @@ OOP—especially the mutable kind—is showing its age. It’s clunky, fragile, 
 
 The future belongs to paradigms that prioritize clarity over cleverness, composition over inheritance, and immutability over illusion. Functional programming isn’t just a better way to write code—it’s a better way to think.
 
+
+<span class="top-right">
+<a class="abtn btn" href="http://localhost:3000/code/BLOGIT/funcvoop_chatgpt.md">EDIT</a>
+<a class="abtn btn" href="http://localhost:3000/view/BLOGIT/funcvoop_chatgpt.md">VIEW</a>
+<a class="abtn btn" href="http://localhost:3000/code/MIG1/help/UsingTheWiki.md">?</a>
+</span>
+<link rel="stylesheet" href="./styles.css">
+<div class="breadcrumb-menu"><a href="..//README.md"></a> &gt; </div>

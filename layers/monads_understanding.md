@@ -1,3 +1,5 @@
+<br>
+
 Okay, here's a training plan to understand monads from first principles, with TypeScript examples. This plan emphasizes understanding the *why* before the *how* and gradually builds complexity.
 
 **Phase 1: Laying the Groundwork (Understanding Types and Functors)**
@@ -289,3 +291,10 @@ Okay, here's a training plan to understand monads from first principles, with Ty
 * **Don't Get Discouraged:** Monads can be a challenging concept to grasp initially. Be patient with yourself and revisit the material as needed. The "aha!" moment will come with consistent effort and practice.
 
 This training plan provides a structured approach to understanding Monads. Remember to take your time, experiment with the code examples, and focus on the underlying principles. Good luck!
+<span class="top-right">
+<a class="abtn btn" href="http://localhost:3000/code/BLOGIT/layers/monads_understanding.md">EDIT</a>
+<a class="abtn btn" href="http://localhost:3000/view/BLOGIT/layers/monads_understanding.md">VIEW</a>
+<a class="abtn btn" href="http://localhost:3000/code/MIG1/help/UsingTheWiki.md">?</a>
+</span>
+<link rel="stylesheet" href="../styles.css">
+<div class="breadcrumb-menu"><a href="../layers/README.md">layers</a> &gt; </div>

@@ -1,5 +1,17 @@
 <br>
 
+## See Also
+
+* [Gemini Deep Research - On Monads](./monads/gemini_thoughts_monads.md)
+
+
+
+
+
+
+
+## A potential training plan
+
 Okay, here's a training plan to understand monads from first principles, with TypeScript examples. This plan emphasizes understanding the *why* before the *how* and gradually builds complexity.
 
 **Phase 1: Laying the Groundwork (Understanding Types and Functors)**

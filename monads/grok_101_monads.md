@@ -1,3 +1,5 @@
+<br>
+
 https://x.com/i/grok/share/WOnNbxiiKVAEAVkS5dgrdPHG8
 
 Alright, let’s break down monads for a computer programmer in a practical, no-nonsense way. Since you’re interested in the X post by Slim Jimmy and the context around functional programming, I’ll focus on what monads mean in that world—think Haskell, Scala, or even JavaScript with libraries like `fp-ts`. We’ll avoid the heavy math (category theory can stay in the corner for now) and focus on what monads do for you as a coder.
@@ -143,3 +145,10 @@ If you’re curious, pick a language with monad support:
 Write a small program that chains operations on a wrapped value, and you’ll start to see why monads are such a big deal in functional programming. They’re like a superpower for managing complexity without losing your mind.
 
 Let me know if you want to dive deeper into a specific monad or example!
+<span class="top-right">
+<a class="abtn btn" href="http://localhost:3000/code/BLOGIT/monads/grok_101_monads.md">EDIT</a>
+<a class="abtn btn" href="http://localhost:3000/view/BLOGIT/monads/grok_101_monads.md">VIEW</a>
+<a class="abtn btn" href="http://localhost:3000/code/MIG1/help/UsingTheWiki.md">?</a>
+</span>
+<link rel="stylesheet" href="../styles.css">
+<div class="breadcrumb-menu"><a href="../monads/README.md">monads</a> &gt; </div>
